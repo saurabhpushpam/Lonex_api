@@ -34,8 +34,15 @@ app.use('/api', subcategory_route);
 const product_routes= require("./routes/productRoutes");
 app.use('/api', product_routes)
 
+app.get('/getapi', (req, res) => {
+   
+ 
+    res.send('server is runnimng at render');
+  
+});
+
 
 app.listen(3000, function(){
-    console.log('server is ready');
+    console.log('server is running');
 });
 
