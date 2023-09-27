@@ -34,10 +34,22 @@ app.use('/api', subcategory_route);
 const product_routes= require("./routes/productRoutes");
 app.use('/api', product_routes)
 
+
+// get api
+
 app.get('/getapi', (req, res) => {
    
  
-    res.send('server is runnimng at render');
+    res.send('server is runnimng at render get api');
+  
+});
+
+// post api
+
+app.post('/fetchapi', (req, res) => {
+   
+ 
+    res.send('server is runnimng at render post api');
   
 });
 
